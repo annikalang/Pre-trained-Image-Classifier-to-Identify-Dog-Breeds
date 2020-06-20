@@ -1,0 +1,39 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+10 filenames from folder pet_images
+Filename =  Dog_01.jpg     label =  dog
+
+ 1 file:                Dog_01.jpg
+Filename =  Dog_02.jpg     label =  dog
+
+ 2 file:                Dog_02.jpg
+Filename =  Giraffe_01.jpg     label =  giraffe
+
+ 3 file:            Giraffe_01.jpg
+Filename =  Coffee_mug_01.jpg     label =  coffee mug
+
+ 4 file:         Coffee_mug_01.jpg
+
+Empty dictionary has 0 items
+
+Printing all key-value pairs in dictionary results_dic:
+
+filename =  Dog_01.jpg     pet label =  dog
+
+filename =  Dog_02.jpg     pet label =  dog
+
+filename =  Giraffe_01.jpg     pet label =  giraffe
+
+filename =  Coffee_mug_01.jpg     pet label =  coffee mug
+
+Empty dictionary has 4 items
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     Dog_01.jpg  label:                        dog
+ 2 key:                     Dog_02.jpg  label:                        dog
+ 3 key:                 Giraffe_01.jpg  label:                    giraffe
+ 4 key:              Coffee_mug_01.jpg  label:                 coffee mug
