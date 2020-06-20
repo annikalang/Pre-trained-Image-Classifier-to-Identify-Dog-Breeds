@@ -4,36 +4,108 @@ Command Line Arguments:
  dogfile = dognames.txt
 
 10 filenames from folder pet_images
+Filename =  Pen_01.jpg     label =  pen
+
+ 1 file:                Pen_01.jpg
 Filename =  Dog_01.jpg     label =  dog
 
- 1 file:                Dog_01.jpg
+ 2 file:                Dog_01.jpg
 Filename =  Dog_02.jpg     label =  dog
 
- 2 file:                Dog_02.jpg
-Filename =  Giraffe_01.jpg     label =  giraffe
+ 3 file:                Dog_02.jpg
+Filename =  cat_01.jpg     label =  cat
 
- 3 file:            Giraffe_01.jpg
-Filename =  Coffee_mug_01.jpg     label =  coffee mug
-
- 4 file:         Coffee_mug_01.jpg
+ 4 file:                cat_01.jpg
 
 Empty dictionary has 0 items
 
 Printing all key-value pairs in dictionary results_dic:
 
+filename =  Pen_01.jpg     pet label =  pen
+
 filename =  Dog_01.jpg     pet label =  dog
 
 filename =  Dog_02.jpg     pet label =  dog
 
-filename =  Giraffe_01.jpg     pet label =  giraffe
-
-filename =  Coffee_mug_01.jpg     pet label =  coffee mug
+filename =  cat_01.jpg     pet label =  cat
 
 Empty dictionary has 4 items
 
 Pet Image Label Dictionary has 4 key-value pairs.
 Below are 4 of them:
- 1 key:                     Dog_01.jpg  label:                        dog
- 2 key:                     Dog_02.jpg  label:                        dog
- 3 key:                 Giraffe_01.jpg  label:                    giraffe
- 4 key:              Coffee_mug_01.jpg  label:                 coffee mug
+ 1 key:                     Pen_01.jpg  label:                        pen
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                     Dog_02.jpg  label:                        dog
+ 4 key:                     cat_01.jpg  label:                        cat
+
+     MATCH:
+
+                    Pen_01.jpg: 
+Real:                        pen   Classifier: letter opener, paper knife, paperknife
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                         beagle
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                         beagle
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier:   norwegian elkhound, elkhound
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+                    Pen_01.jpg: 
+Real:                        pen   Classifier: letter opener, paper knife, paperknife  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    cat_01.jpg: 
+Real:                        cat   Classifier:   norwegian elkhound, elkhound  
+PetLabelDog: 0  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+Model used: resnet
+
+Number of Images: 4 
+Number of Dog Images: 2 
+Number of "Not-a" Dog Images: 2
+pct_match: 25.0
+pct_correct_dogs: 100.0
+pct_correct_breed: 0.0
+pct_correct_notdogs: 50.0
+
+MISCLASSIFIED DOGS: 
+ Pet Image Label?: cat 
+ Classifier Label?: norwegian elkhound, elkhound
+
+MISCLASSIFIED BREEDS: 
+ Pet Image Label?: dog 
+ Classifier Label?: beagle
+
+MISCLASSIFIED BREEDS: 
+ Pet Image Label?: dog 
+ Classifier Label?: beagle
+
+** Total Elapsed Runtime: 0:0:0
